@@ -8,7 +8,7 @@ import { useState } from 'react'
 import Profile from './images/profile.jpg'
 
 export const Left = () => {
-  const [option, setOption] = useState('Dashboard')
+  const [option, setOption] = useState('Review List')
   const [activeOption, setActiveOption] = useState('Dashboard') // Track the active option
 
   const handleOptionClick = (newOption) => {
@@ -27,13 +27,13 @@ export const Left = () => {
           <li className="options">
             <a
               className={`options ${
-                activeOption === 'Dashboard' ? 'toggle' : ''
+                activeOption === 'Review List' ? 'toggle' : ''
               }`}
               href="#"
-              onClick={() => handleOptionClick('Dashboard')}
+              onClick={() => handleOptionClick('Review List')}
             >
               <KeyRoundedIcon className="icon" />
-              Dashboard
+              Review List
             </a>
           </li>
 
